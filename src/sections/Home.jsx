@@ -9,7 +9,7 @@ const Home = () => {
         className="min-h-screen pt-24 flex items-center justify-center py-16 px-4"
         >
 
-        <div className="relative bg-white max-w-5xl mx-auto rounded-xl shadow-lg pt-8 pb-10 px-6 w-full max-w-xl text-center">
+        <div className="relative bg-white max-w-5xl mx-auto rounded-xl border shadow-lg pt-8 pb-10 px-6 w-full max-w-xl text-center">
             {/* Profile Image */}
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
                 <div className="rounded-full bg-gradient-to-tr from-blue-500 to-purple-600">
@@ -34,7 +34,7 @@ const Home = () => {
 
                 <div className="mt-12 flex justify-center gap-4 flex-wrap">
                     <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-300 hover:text-gray-800 hover:shadow rounded transition-all">View my Work</button>
-                    <button className="bg-white border border-gray-500 px-4 py-2 rounded hover:bg-gray-500 hover:text-white hover:shadow rounded transition-all">Get In Touch</button>
+                    <button className="bg-white text-gray-800 border border-gray-500 px-4 py-2 rounded hover:bg-gray-500 hover:text-white hover:shadow rounded transition-all">Get In Touch</button>
                 </div>
 
                 <div className="flex justify-center mt-8 space-x-6 text-2xl">

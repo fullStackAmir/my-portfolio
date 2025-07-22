@@ -2,6 +2,7 @@ import React from 'react';
 import { FaJava, FaJs, FaPhp, FaPython, FaHtml5, FaCss3, FaReact, FaDocker, FaAws, FaNode, FaLaravel, FaGitAlt } from 'react-icons/fa';
 import { SiTailwindcss, SiSpringboot, SiMongodb, SiExpress, SiVercel, SiXampp, SiPostman, SiJquery, SiBootstrap, SiMysql } from 'react-icons/si';
 import { DiMsqlServer } from "react-icons/di";
+import { FaTools } from 'react-icons/fa';
 
 const categories = [
   {
@@ -46,7 +47,6 @@ const categories = [
       { name: 'AWS', icon: <FaAws /> },
       { name: 'XAMPP', icon: <SiXampp /> },
       { name: 'Docker', icon: <FaDocker /> },
-      { name: 'Render' },
       { name: 'Vercel', icon: <SiVercel /> },
       { name: 'CI/CD', icon: <FaGitAlt /> },
     ],
@@ -55,9 +55,13 @@ const categories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen py-4 px-4">
+    <section id="skills" className="min-h-screen mt-6 py-4 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className=" text-3xl font-bold mb-4 text-center w-full">Skills</h2>
+        <div className="flex items-center justify-center gap-3 mb-4">
+            <FaTools className="text-2xl text-black" />
+            <h2 className="text-black text-3xl font-bold text-center">Skills</h2>
+        </div>
+        
         <p className="text-center mb-12">Technologies and tools I work with</p>
 
         {categories.map((cat) => (
