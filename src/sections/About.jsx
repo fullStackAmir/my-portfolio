@@ -19,7 +19,7 @@ const about = [
   },
   {
     degree: 'Bachelor of Banking',
-    institution: 'Business School of Banking - Algeria ',
+    institution: 'Business School of Banking - Algoers, Algeria ',
      year: '2007',
   },
 ];
