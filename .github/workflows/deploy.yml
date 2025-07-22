@@ -1,0 +1,16 @@
+name: Trigger Vercel Deploy
+on:
+  push:
+    branches: [ "main" ]  # Runs on pushes to main
+  workflow_dispatch:      # Allow manual triggers
+
+jobs:
+  trigger-vercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Deployment
+        run: |
+          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_9Qfb4iYNBTVbQKN4BTApLFGrd1Gm/fCFV8vTmNW"
+        env:
+          # Store hook URL as a GitHub Secret (Settings → Secrets)
+          HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK }}
