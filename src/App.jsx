@@ -3,6 +3,8 @@ import Home from "./sections/Home";
 import Skills from "./sections/Skills";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
+import Footer from "./components/Footer";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Skills />
       <About />
       <Projects />
+      <Contact />
+      <Footer />
       
     </div>
   );
