@@ -50,18 +50,18 @@ const About = () => {
       <div className="max-w-5xl mx-auto">
         {/* Education Section */}
         <div className="mb-16">
-             <div className="flex items-center justify-center gap-3 mb-4">
-                <FaGraduationCap className="text-2xl text-black" />
-                <h2 className="text-black text-3xl font-bold text-center">Education</h2>
+             <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mb-4">
+                <FaGraduationCap className="text-2xl" />
+                <h2 className="text-3xl font-bold text-center">Education</h2>
             </div>
             <p className="text-center mb-12">My academic background and qualifications</p>
 
-            <div className="bg-white p-6 rounded-xl shadow-lg border ">
+            <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 p-6 rounded-xl shadow-lg border ">
                 {education.map((exp, index) => (
                 <div key={index}>
                     <div className="mb-3">
                         <div className="flex justify-between items-center">
-                            <h2 className="text-xl text-gray-800 font-semibold">{exp.degree}</h2>
+                            <h2 className="text-xl text-gray-800 font-semibold dark:text-gray-200">{exp.degree}</h2>
                             <p className="text-gray-500 font-medium">• {exp.year}</p>
                         </div>
                         <p className="text-gray-500 font-medium">{exp.institution}</p>
@@ -77,24 +77,24 @@ const About = () => {
 
         {/* Experience Section */}
         <div>
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <FaBriefcase className="text-2xl text-black" />
-            <h2 className="text-black text-3xl font-bold text-center">Experience</h2>
+          <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mb-4">
+            <FaBriefcase className="text-2xl" />
+            <h2 className="text-3xl font-bold text-center">Experience</h2>
           </div>
           <p className="text-center mb-10">My professional journey</p>
 
-          <div className="bg-white p-6 mb-10 rounded-xl shadow-lg border">
+          <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 p-6 mb-10 rounded-xl shadow-lg border">
             {experience.map((exp, index) => (
               <div key={`exp-${index}`}>
                 <div className="mb-3">
                   <div className="flex justify-between items-center">
-                    <h2 className="text-xl text-gray-800 font-semibold">{exp.position}</h2>
+                    <h2 className="text-xl text-gray-800 font-semibold dark:text-gray-200">{exp.position}</h2>
                     <p className="text-gray-500 font-medium">• {exp.year}</p>
                   </div>
-                  <p className="font-medium">{exp.company}</p>
-                  <p className="text-gray-400 mt-1">{exp.description}</p>
+                  <p className="font-medium mt-1">{exp.company}</p>
+                  <p className="text-gray-500">{exp.description}</p>
                 </div>
-                {index !== experience.length - 1 && <hr className="border-t border-gray-200 mb-3" />}
+                {index !== experience.length - 1 && <hr className="border-t border-gray-700  mb-3" />}
               </div>
             ))}
           </div>

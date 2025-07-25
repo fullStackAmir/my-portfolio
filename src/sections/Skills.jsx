@@ -55,25 +55,25 @@ const categories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen mt-6 py-4 px-4">
+    <section id="skills" className="min-h-screen pt-6 py-4 px-4">
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center justify-center gap-3 mb-4">
-            <FaTools className="text-2xl text-black" />
-            <h2 className="text-black text-3xl font-bold text-center">Skills</h2>
+        <div className="flex items-center justify-center text-black dark:text-gray-100 gap-3 mb-4">
+            <FaTools className="text-2xl" />
+            <h2 className="text-3xl font-bold text-center">Skills</h2>
         </div>
         
         <p className="text-center mb-12">Technologies and tools I work with</p>
 
         {categories.map((cat) => (
           <div key={cat.title} className="mb-10">
-            <h3 className="text-xl font-semibold mb-4 border-l-4 border-gray-900 pl-4">{cat.title}</h3>
+            <h3 className="text-xl font-semibold mb-4 dark:text-gray-400 border-l-4 border-gray-900 dark:border-gray-100 pl-4">{cat.title}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {cat.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex items-center space-x-3 bg-white p-3 hover:shadow hover:border-2 hover:blue-400 rounded transition-all"
+                  className="flex items-center space-x-3 bg-white dark:bg-gray-900 p-3 border border-gray-500 hover:border-2 hover:blue-400 rounded transition-all"
                 >
-                  <span className="text-2xl text-gray-900">{skill.icon}</span>
+                  <span className="text-2xl text-gray-900 dark:text-gray-200">{skill.icon}</span>
                   <span>{skill.name}</span>
                 </div>
               ))}

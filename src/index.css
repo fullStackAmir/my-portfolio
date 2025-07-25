@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem; 
+}
+
+/* Solution parfaite sans espace supplémentaire */
+:target::before {
+  content: "";
+  display: block;
+  height: 64px; /* Hauteur de votre navbar */
+  margin-top: -64px; /* Compensation négative */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* SCROLLBAR LIGHT MODE (par défaut) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6; /* gris clair */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* gris */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* SCROLLBAR DARK MODE */
+html.dark ::-webkit-scrollbar-track {
+  background: #0f172a; /* gris foncé */
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* gris clair foncé */
+}
