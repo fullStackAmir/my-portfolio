@@ -15,7 +15,7 @@ const projects = [
     description: 'A movie discovery website with real-time TMDB data, user authentication, and personalized favorites list.',
     tags: ['React', 'JavaScript', 'TMDB API', 'JSON Server'],
     githubUrl: "https://github.com/Hitao1623/movie-explorer.git",
-    demoUrl: "movie-explorer-sandy.vercel.app"
+    demoUrl: "https://movie-explorer-sandy.vercel.app"
   },
   {
     title: 'E-commerce Web',
