@@ -39,7 +39,11 @@ const Home = () => {
                 </p>
 
                 <div className="mt-12 flex justify-center gap-4 flex-wrap">
-                    <button className="bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-950 px-4 py-2 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow rounded transition-all">See my Projects</button>
+                    <a 
+                        href='#projects'
+                        className="bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-950 px-4 py-2 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow rounded transition-all">
+                        See my Projects
+                    </a>
                     <a 
                         href={cv}
                         download 
