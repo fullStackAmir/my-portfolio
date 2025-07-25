@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaCalendarAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section id="contact" className="mt-10 py-4 px-4">
+    <section id="contact" className="mt-10 mb-6 px-4">
       <div className="max-w-5xl mx-auto">
 
         {/* Header */}
