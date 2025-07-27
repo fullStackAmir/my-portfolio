@@ -46,17 +46,17 @@ const experience = [
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen mt-6 py-4 px-4">
+    <section id="about" className="min-h-screen mt-20 py-4 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Education Section */}
-        <div className="mb-16">
-             <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mb-4">
+        <div>
+             <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100">
                 <FaGraduationCap className="text-2xl" />
                 <h2 className="text-3xl font-bold text-center">Education</h2>
             </div>
             <p className="text-center mb-12">My academic background and qualifications</p>
 
-            <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 p-6 rounded-xl shadow-lg border ">
+            <div className="bg-white dark:bg-gray-900 dark:border-gray-700 p-6 rounded-xl shadow-lg border ">
                 {education.map((exp, index) => (
                 <div key={index}>
                     <div className="mb-3">
@@ -77,13 +77,13 @@ const About = () => {
 
         {/* Experience Section */}
         <div>
-          <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mb-4">
+          <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mt-16 py-4">
             <FaBriefcase className="text-2xl" />
             <h2 className="text-3xl font-bold text-center">Experience</h2>
           </div>
           <p className="text-center mb-10">My professional journey</p>
 
-          <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 p-6 mb-10 rounded-xl shadow-lg border">
+          <div className="bg-white dark:bg-gray-900 border dark:border-gray-700 p-6 mb-10 rounded-xl shadow-lg">
             {experience.map((exp, index) => (
               <div key={`exp-${index}`}>
                 <div className="mb-3">

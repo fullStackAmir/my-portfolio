@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section 
         id="home" 
-        className="pt-32 pb-16 px-4"
+        className="pt-36 py-4 px-4"
         >
         
         <div className="relative bg-white dark:bg-gray-900 max-w-5xl mx-auto p-6 text-center rounded-xl shadow-lg border dark:border-gray-700 ">
@@ -31,7 +31,7 @@ const Home = () => {
                     Montréal, Canada
                 </p>
 
-                <p className="text-left text-gray-400 text-lg text-justify leading-relaxed mt-4 px-8">
+                <p className=" text-gray-400 text-lg text-justify leading-relaxed mt-4 px-8">
                     Motivated Full-Stack Developer transitioning to IT after a career in finance. 
                     Skilled in front-end & back-end technologies, data analysis and problem-solving. 
                     Background in Internal Audit and Credit Risk strengthened my attention to detail, 
@@ -41,13 +41,13 @@ const Home = () => {
                 <div className="mt-12 flex justify-center gap-4 flex-wrap">
                     <a 
                         href='#projects'
-                        className="bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-950 px-4 py-2 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow rounded transition-all">
+                        className="bg-gray-900 dark:bg-gray-200 text-white dark:text-gray-950 px-4 py-2 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-100 hover:shadow transition-all">
                         See my Projects
                     </a>
                     <a 
                         href={cv}
                         download 
-                        className="dark:text-gray-400 border border-gray-500 px-4 py-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow rounded transition-all"
+                        className="dark:text-gray-400 border border-gray-500 hover:border-gray-800 px-4 py-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow transition-all"
                         >
                         <FiDownload className="inline mr-2" />
                         Download CV

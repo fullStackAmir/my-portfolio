@@ -38,22 +38,24 @@ const Navbar = () => {
 
 
   return (
-    <header className="fixed top-0 w-full h-16 z-50 bg-gray-50 dark:bg-black backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 w-full h-16 z-50 bg-gray-50 dark:bg-gray-900 backdrop-blur-sm shadow-sm">
       <nav className="max-w-5xl mx-auto px-6 h-full flex items-center justify-between relative">
         {/* Logo */}
-        <a href='#home' className="flex items-center gap-2">
+        <a href='#home' className="flex items-center gap-2 group">
           {/* Light Mode */}
-          <img
-            src={logoLight}
-            alt="Logo"
-            className="h-12 block dark:hidden"
-          />
+          <div className="h-12 w-20 transform rotate-45 overflow-hidden transition duration-300 ease-in-out group-hover:rotate-[360deg]">
+            <img
+              src={logoLight}
+              alt="Logo"
+              className="h-full w-full object-cover -rotate-45 block dark:hidden"
+            />
           {/* Dark Mode */}
-          <img
-            src={logoDark}
-            alt="Logo"
-            className="h-12 hidden dark:block"
-          />
+            <img
+              src={logoDark}
+              alt="Logo"
+              className="h-full w-full object-cover -rotate-45 hidden dark:block"
+            />
+          </div>
         </a>
 
         {/* Desktop menu */}

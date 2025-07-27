@@ -55,7 +55,7 @@ const categories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen pt-6 py-4 px-4">
+    <section id="skills" className="min-h-screen mt-10 py-4 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-center text-black dark:text-gray-100 gap-3 mb-4">
             <FaTools className="text-2xl" />
