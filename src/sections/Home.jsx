@@ -34,8 +34,8 @@ const Home = () => {
                 <p className=" text-gray-400 text-lg text-justify leading-relaxed mt-4 px-8">
                     Motivated Full-Stack Developer transitioning to IT after a career in finance. 
                     Skilled in front-end & back-end technologies, data analysis and problem-solving. 
-                    Background in Internal Audit and Credit Risk strengthened my attention to detail, 
-                    logical thinking, and ability to thrive in fast-paced, high-responsibility roles.
+                    My background in Internal Audit and Credit Risk has strengthened my attention to detail, 
+                    logical thinking, and ability to excel in fast-paced, high-responsibility environments.
                 </p>
 
                 <div className="mt-12 flex justify-center gap-4 flex-wrap">

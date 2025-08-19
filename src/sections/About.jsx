@@ -10,7 +10,7 @@ const education  = [
   {
     degree: 'ACS – Business Intelligence and Analytics',
     institution: 'Collège de Bois-de-Boulogne - Montreal, QC Canada',
-     year: 'Expected Jan 2026',
+     year: 'Expected Dec 2025',
   },
   {
     degree: 'Master  of Finance',
@@ -19,26 +19,26 @@ const education  = [
   },
   {
     degree: 'Bachelor of Banking',
-    institution: 'Business School of Banking - Algoers, Algeria ',
+    institution: 'Business School of Banking - Algiers, Algeria ',
      year: '2007',
   },
 ];
 const experience = [
   {
     position: 'Head of Internal Audit',
-    company: 'Al Salam Bank - Algeria',
+    company: 'Al Salam Bank',
     year: '2022-2023',
     description: 'Enhanced internal controls | Drove risk-based audit programs | Delivered executive-level risk reports | Led data-powered audit initiatives.'
   },
   {
     position: 'Team Leader - Internal Audit',
-    company: 'Al Salam Bank - Algeria',
+    company: 'Al Salam Bank',
     year: '2013-2022',
     description: 'Automated data cleaning (VBA macros) | Analyzed large datasets | Streamlined internal controls | Designed dynamic dashboards.'
   },
   {
     position: 'Credit Risk Analyst',
-    company: 'BNP Paribas, Algeria',
+    company: 'BNP Paribas',
     year: '2011-2012',
     description: 'Performed financial data analysis | Conducted predictive credit risk analysis | Prepared executive credit committee reports.'
   },
@@ -50,11 +50,11 @@ const About = () => {
       <div className="max-w-5xl mx-auto">
         {/* Education Section */}
         <div>
-             <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100">
+             <div className="flex items-center justify-center gap-3 text-black dark:text-gray-100 mb-4">
                 <FaGraduationCap className="text-2xl" />
                 <h2 className="text-3xl font-bold text-center">Education</h2>
             </div>
-            <p className="text-center mb-12">My academic background and qualifications</p>
+            <p className="text-center mb-10">My academic background and qualifications</p>
 
             <div className="bg-white dark:bg-gray-900 dark:border-gray-700 p-6 rounded-xl shadow-lg border ">
                 {education.map((exp, index) => (
