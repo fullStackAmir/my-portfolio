@@ -25,7 +25,7 @@ const projects = [
     demoUrl: "https://e-commerce-web.infinityfreeapp.com"
   },
   {
-    title: 'FSD Portfolio',
+    title: 'Personal Portfolio Project',
     description: 'Designed and developed a responsive portfolio with dark/light mode.',
     tags: ['React', 'Tailwind CSS', 'Vite'],
     githubUrl: "https://github.com/fullStackAmir/my-portfolio.git",
